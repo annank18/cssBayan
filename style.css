@@ -1,0 +1,116 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: blanchedalmond;
+    color: gray;
+}
+body{
+    margin: 1rem auto;
+    padding: 0 5rem;
+    text-align: center;
+    height: 100vh;
+    font-size: 3vw;
+}
+input {
+    display: none;
+}
+.bayan{
+    text-align: left;
+}
+.bayan:hover{
+    cursor: pointer;
+}
+.bayan:hover h2,.bayan:hover h1 {
+    color: black;
+}
+.bayan:hover .icon{
+    display: block;
+    background: url('./assets/icon.png');
+    background-repeat: no-repeat;
+}
+.line {
+    width: 100%;
+    border-top: 3px solid gray;
+}
+.block_img{
+    text-align: center;
+    display: none;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.block1:hover .block_img{
+    display: block;
+}
+#button1:checked ~ .bl1 > .name > .icon, #button1:checked ~ .bl1 > .block_img{
+    display: block;
+}
+#button2:checked ~ .bl2 > .name > .icon, #button2:checked ~ .bl2 > .block_img{
+    display: block;
+}
+#button3:checked ~ .bl3 > .name > .icon, #button3:checked ~ .bl3 > .block_img{
+    display: block;
+}
+#button4:checked ~ .bl4 > .name > .icon, #button4:checked ~ .bl4 > .block_img{
+    display: block;
+}
+#button5:checked ~ .bl5 > .name > .icon, #button5:checked ~ .bl5 > .block_img{
+    display: block;
+}
+#button1:checked ~ .bl1 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+#button2:checked ~ .bl2 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+#button3:checked ~ .bl3 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+#button4:checked ~ .bl4 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+#button5:checked ~ .bl5 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+#button1:hover, #button2:hover,#button3:hover,#button4:hover,#button5:hover{
+    cursor: pointer;
+}
+#button1:active, #button2:active,#button3:active,#button4:active,#button5:active{
+    cursor:grab;
+}
+#button1:hover ~ .bl1 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+#button2:hover ~ .bl2 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+#button3:hover ~ .bl3 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+#button4:hover ~ .bl4 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+#button5:hover ~ .bl5 > .name > .icon{
+    background: url('./assets/icon_inactive.png');
+    background-repeat: no-repeat;
+}
+.icon{
+    width: 3vw;
+    height: 3vw;
+    font-size: 0em;
+    margin: auto 0;
+    background: url('./assets/icon.png');
+    background-repeat: no-repeat;
+    display: none;
+    transition: .8s;
+}
