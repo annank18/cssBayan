@@ -40,6 +40,16 @@ input {
     display: flex;
     justify-content: space-between;
 }
+.icon{
+    width: 3vw;
+    height: 3vw;
+    font-size: 0em;
+    margin: auto 0;
+    background: url('./assets/icon.png');
+    background-repeat: no-repeat;
+    display: none;
+    transition: .8s;
+}
 .block1:hover .block_img{
     display: block;
 }
@@ -103,14 +113,4 @@ input {
 #button5:hover ~ .bl5 > .name > .icon{
     background: url('./assets/icon_inactive.png');
     background-repeat: no-repeat;
-}
-.icon{
-    width: 3vw;
-    height: 3vw;
-    font-size: 0em;
-    margin: auto 0;
-    background: url('./assets/icon.png');
-    background-repeat: no-repeat;
-    display: none;
-    transition: .8s;
 }
